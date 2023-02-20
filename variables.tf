@@ -36,11 +36,11 @@ variable "instance_cores" {
 }
 
 variable "instance_memory" {
-  default = 4
+  default = 1
 }
 
 variable "instance_core_fraction" {
-  default = 20
+  default = 5
 }
 
 variable "boot_disk_type" {
@@ -65,7 +65,7 @@ variable "image_family" {
 
 variable "preemptible" {
   type = bool
-  default = false
+  default = true
 }
 variable "metadata" {
   description = "for dynamic block 'metadata' "
