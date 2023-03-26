@@ -105,11 +105,3 @@ variable "description" {
   default = "TODO: description;"
 }
 
-variable "api_token" {
-  type        = string
-  description = "API token"
-  validation {
-    condition     = length(var.api_token) == 32
-    error_message = "Must be a 32 character long API token."
-  }
-}
